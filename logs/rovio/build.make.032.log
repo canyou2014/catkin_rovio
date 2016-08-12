@@ -1,0 +1,15 @@
+[  0%] [  0%] Built target geometry_msgs_generate_messages_lisp
+Built target std_msgs_generate_messages_lisp
+[  0%] [  0%] Built target std_msgs_generate_messages_cpp
+Built target geometry_msgs_generate_messages_cpp
+[ 41%] Built target rovio
+[ 41%] Built target _rovio_generate_messages_check_deps_SrvResetToPose
+[ 41%] Built target geometry_msgs_generate_messages_py
+[ 41%] Built target std_msgs_generate_messages_py
+[ 50%] [ 58%] Built target feature_tracker_node
+Built target rovio_generate_messages_lisp
+[ 75%] [ 75%] Built target rovio_node
+Built target rovio_rosbag_loader
+[ 91%] [100%] Built target rovio_generate_messages_py
+Built target rovio_generate_messages_cpp
+[100%] Built target rovio_generate_messages

@@ -1,0 +1,8 @@
+Symlinking /home/lyw/catkin_rovio/devel/./env.sh
+Symlinking /home/lyw/catkin_rovio/devel/./setup.bash
+Symlinking /home/lyw/catkin_rovio/devel/./setup.sh
+Symlinking /home/lyw/catkin_rovio/devel/./_setup_util.py
+Symlinking /home/lyw/catkin_rovio/devel/./setup.zsh
+Symlinking /home/lyw/catkin_rovio/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/lyw/catkin_rovio/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/lyw/catkin_rovio/devel/lib/pkgconfig/catkin_tools_prebuild.pc

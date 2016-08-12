@@ -1,0 +1,19 @@
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp: In function ‘int main(int, char**)’:
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:265:40: error: no matching function for call to ‘stod(__gnu_cxx::__alloc_traits<std::allocator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > > >::value_type&)’
+       t = std::stod(cam_iterators.at(i));
+                                        ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:265:40: note: candidates are:
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /opt/ros/indigo/include/ros/package.h:31,
+                 from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:29:
+/usr/include/c++/4.8/bits/basic_string.h:2853:3: note: double std::stod(const string&, std::size_t*)
+   stod(const string& __str, size_t* __idx = 0)
+   ^
+/usr/include/c++/4.8/bits/basic_string.h:2853:3: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > > >::value_type {aka __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >}’ to ‘const string& {aka const std::basic_string<char>&}’
+/usr/include/c++/4.8/bits/basic_string.h:2956:3: note: double std::stod(const wstring&, std::size_t*)
+   stod(const wstring& __str, size_t* __idx = 0)
+   ^
+/usr/include/c++/4.8/bits/basic_string.h:2956:3: note:   no known conversion for argument 1 from ‘__gnu_cxx::__alloc_traits<std::allocator<__gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > > > >::value_type {aka __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >}’ to ‘const wstring& {aka const std::basic_string<wchar_t>&}’
+make[2]: *** [CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio_rosbag_loader.dir/all] Error 2
+make: *** [all] Error 2

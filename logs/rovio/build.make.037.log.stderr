@@ -1,0 +1,10 @@
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp: In function ‘int main(int, char**)’:
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:303:27: error: ‘lastSafeTime’ was not declared in this scope
+         lastTriggerTime = lastSafeTime;
+                           ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:306:30: error: ‘lastSafeTime’ was not declared in this scope
+       if(resetTrigger>0.0 && lastSafeTime - lastTriggerTime > resetTrigger){
+                              ^
+make[2]: *** [CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio_rosbag_loader.dir/all] Error 2
+make: *** [all] Error 2

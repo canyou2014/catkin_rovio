@@ -1,0 +1,1 @@
+/home/lyw/catkin_rovio/devel/.private/rovio/lib/python2.7/dist-packages/rovio/srv/_SrvResetToPose.py

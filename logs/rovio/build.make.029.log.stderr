@@ -1,0 +1,42 @@
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp: In function ‘int main(int, char**)’:
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:262:19: error: expected primary-expression before ‘seconds’
+       std::string seconds = cam_iterators.at(i)->substr(
+                   ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:265:41: error: ‘seconds’ was not declared in this scope
+       std::string s_cam = nanoseconds + seconds;
+                                         ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:265:41: note: suggested alternatives:
+In file included from /usr/include/c++/4.8/mutex:39:0,
+                 from /home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:33,
+                 from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:39:
+/usr/include/c++/4.8/chrono:535:33: note:   ‘std::chrono::seconds’
+     typedef duration<int64_t>   seconds;
+                                 ^
+In file included from /usr/include/boost/date_time/posix_time/posix_time_types.hpp:16:0,
+                 from /usr/include/boost/thread/thread_time.hpp:11,
+                 from /usr/include/boost/thread/lock_types.hpp:18,
+                 from /usr/include/boost/thread/pthread/mutex.hpp:14,
+                 from /usr/include/boost/thread/mutex.hpp:16,
+                 from /opt/ros/indigo/include/tf/time_cache.h:36,
+                 from /opt/ros/indigo/include/tf/tf.h:43,
+                 from /opt/ros/indigo/include/tf/transform_broadcaster.h:36,
+                 from /home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:47,
+                 from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:39:
+/usr/include/boost/date_time/posix_time/posix_time_duration.hpp:42:9: note:   ‘boost::posix_time::seconds’
+   class seconds : public time_duration
+         ^
+In file included from /usr/include/boost/chrono/time_point.hpp:33:0,
+                 from /usr/include/boost/thread/lock_types.hpp:22,
+                 from /usr/include/boost/thread/pthread/mutex.hpp:14,
+                 from /usr/include/boost/thread/mutex.hpp:16,
+                 from /opt/ros/indigo/include/tf/time_cache.h:36,
+                 from /opt/ros/indigo/include/tf/tf.h:43,
+                 from /opt/ros/indigo/include/tf/transform_broadcaster.h:36,
+                 from /home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:47,
+                 from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:39:
+/usr/include/boost/chrono/duration.hpp:201:44: note:   ‘boost::chrono::seconds’
+     typedef duration<boost::int_least64_t> seconds;              // at least 35 bits needed
+                                            ^
+make[2]: *** [CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio_rosbag_loader.dir/all] Error 2
+make: *** [all] Error 2

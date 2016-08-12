@@ -1,0 +1,29 @@
+In file included from /home/lyw/catkin_rovio/src/rovio/src/rovio_node.cpp:40:0:
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:452:33: error: expected ‘,’ or ‘...’ before ‘acc’
+ void imuCallback(const double[] acc,const double[] gyro,double t_imu ){
+                                 ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:550:6: error: default argument missing for parameter 3 of ‘void rovio::RovioNode<FILTER>::imgCallback(const cv::Mat&, int, double)’
+ void imgCallback(const cv::Mat& img, const int camID = 0, double t){
+      ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp: In member function ‘void rovio::RovioNode<FILTER>::imuCallback(const double*)’:
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:454:78: error: ‘acc’ was not declared in this scope
+     predictionMeas_.template get<mtPredictionMeas::_acc>() = Eigen::Vector3d(acc[0],acc[1],acc[2]);
+                                                                              ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:455:78: error: ‘gyro’ was not declared in this scope
+     predictionMeas_.template get<mtPredictionMeas::_gyr>() = Eigen::Vector3d(gyro[0],gyro[1],gyro[2]);
+                                                                              ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:457:52: error: ‘t_imu’ was not declared in this scope
+       mpFilter_->addPredictionMeas(predictionMeas_,t_imu);
+                                                    ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:463:73: error: ‘t_imu’ was not declared in this scope
+           mpFilter_->resetWithPose(init_state_.WrWM_, init_state_.qMW_, t_imu);
+                                                                         ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:468:100: error: ‘t_imu’ was not declared in this scope
+           mpFilter_->resetWithAccelerometer(predictionMeas_.template get<mtPredictionMeas::_acc>(),t_imu);
+                                                                                                    ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:479:56: error: ‘t_imu’ was not declared in this scope
+       std::cout << "-- Filter: Initialized at t = " << t_imu << std::endl;
+                                                        ^
+make[2]: *** [CMakeFiles/rovio.dir/src/rovio_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio.dir/all] Error 2
+make: *** [all] Error 2

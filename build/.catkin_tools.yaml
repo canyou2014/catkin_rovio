@@ -1,0 +1,6 @@
+devel_space: /home/lyw/catkin_rovio/devel
+install: false
+install_space: /home/lyw/catkin_rovio/install
+profile: default
+source_space: /home/lyw/catkin_rovio/src
+workspace: /home/lyw/catkin_rovio

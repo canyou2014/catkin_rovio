@@ -1,0 +1,18 @@
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] [ 41%] Built target std_msgs_generate_messages_lisp
+Built target rovio
+[ 41%] Built target std_msgs_generate_messages_cpp
+[ 41%] [ 41%] [ 41%] Built target geometry_msgs_generate_messages_cpp
+Built target geometry_msgs_generate_messages_py
+Built target _rovio_generate_messages_check_deps_SrvResetToPose
+[ 41%] [35m[1mScanning dependencies of target rovio_rosbag_loader
+Built target std_msgs_generate_messages_py
+[ 50%] Built target rovio_node
+[0m[ 58%] [ 66%] Built target rovio_generate_messages_lisp
+Built target feature_tracker_node
+[ 75%] Built target rovio_generate_messages_cpp
+[ 83%] [100%] [32mBuilding CXX object CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o
+[0mBuilt target rovio_generate_messages_py
+[100%] Built target rovio_generate_messages
+[31m[1mLinking CXX executable /home/lyw/catkin_rovio/devel/.private/rovio/lib/rovio/rovio_rosbag_loader
+[0m[100%] Built target rovio_rosbag_loader

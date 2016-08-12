@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lyw/catkin_rovio/devel/.private/rovio/setup.sh

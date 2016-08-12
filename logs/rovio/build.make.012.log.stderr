@@ -1,0 +1,38 @@
+In file included from /home/lyw/catkin_rovio/src/rovio/src/rovio_node.cpp:40:0:
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:452:24: error: ‘vector3d’ does not name a type
+ void imuCallback(const vector3d acc, const vector3d gyro,double t_imu ){
+                        ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:452:33: error: ISO C++ forbids declaration of ‘acc’ with no type [-fpermissive]
+ void imuCallback(const vector3d acc, const vector3d gyro,double t_imu ){
+                                 ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:452:44: error: ‘vector3d’ does not name a type
+ void imuCallback(const vector3d acc, const vector3d gyro,double t_imu ){
+                                            ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:452:53: error: ISO C++ forbids declaration of ‘gyro’ with no type [-fpermissive]
+ void imuCallback(const vector3d acc, const vector3d gyro,double t_imu ){
+                                                     ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:550:6: error: default argument missing for parameter 3 of ‘void rovio::RovioNode<FILTER>::imgCallback(const cv::Mat&, int, double)’
+ void imgCallback(const cv::Mat& img, const int camID = 0, double t){
+      ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp: In member function ‘void rovio::RovioNode<FILTER>::imuCallback(int, int, double)’:
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:454:83: error: invalid types ‘const int[int]’ for array subscript
+     predictionMeas_.template get<mtPredictionMeas::_acc>() = Eigen::Vector3d(acc[0],acc[1],acc[2]);
+                                                                                   ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:454:90: error: invalid types ‘const int[int]’ for array subscript
+     predictionMeas_.template get<mtPredictionMeas::_acc>() = Eigen::Vector3d(acc[0],acc[1],acc[2]);
+                                                                                          ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:454:97: error: invalid types ‘const int[int]’ for array subscript
+     predictionMeas_.template get<mtPredictionMeas::_acc>() = Eigen::Vector3d(acc[0],acc[1],acc[2]);
+                                                                                                 ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:455:84: error: invalid types ‘const int[int]’ for array subscript
+     predictionMeas_.template get<mtPredictionMeas::_gyr>() = Eigen::Vector3d(gyro[0],gyro[1],gyro[2]);
+                                                                                    ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:455:92: error: invalid types ‘const int[int]’ for array subscript
+     predictionMeas_.template get<mtPredictionMeas::_gyr>() = Eigen::Vector3d(gyro[0],gyro[1],gyro[2]);
+                                                                                            ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:455:100: error: invalid types ‘const int[int]’ for array subscript
+     predictionMeas_.template get<mtPredictionMeas::_gyr>() = Eigen::Vector3d(gyro[0],gyro[1],gyro[2]);
+                                                                                                    ^
+make[2]: *** [CMakeFiles/rovio.dir/src/rovio_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio.dir/all] Error 2
+make: *** [all] Error 2

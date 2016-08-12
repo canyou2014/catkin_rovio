@@ -1,0 +1,1 @@
+/home/lyw/catkin_rovio/devel/.private/rovio/share/rovio/cmake/rovioConfig.cmake

@@ -1,0 +1,13 @@
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp: In function ‘int main(int, char**)’:
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:401:3: error: ‘mRovioScene’ was not declared in this scope
+   mRovioScene.initScene(argc,argv,mVSFileName,mFSFileName,mpFilter);
+   ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:402:31: error: ‘idleFunc’ was not declared in this scope
+   mRovioScene.setIdleFunction(idleFunc);
+                               ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:404:16: error: ‘glutMainLoop’ was not declared in this scope
+   glutMainLoop();
+                ^
+make[2]: *** [CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio_rosbag_loader.dir/all] Error 2
+make: *** [all] Error 2

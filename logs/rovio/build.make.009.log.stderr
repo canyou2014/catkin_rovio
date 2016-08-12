@@ -1,0 +1,31 @@
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp: In function ‘int main(int, char**)’:
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:302:42: error: no matching function for call to ‘rovio::RovioNode<rovio::RovioFilter<rovio::FilterState<25u, 4, 6, 1, 0> > >::imuCallback(Eigen::Vector3d&, Eigen::Vector3d&, double&)’
+     rovioNode.imuCallback(acc, gyr, t_imu);
+                                          ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:302:42: note: candidate is:
+In file included from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:39:0:
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:420:8: note: void rovio::RovioNode<FILTER>::imuCallback(const ConstPtr&) [with FILTER = rovio::RovioFilter<rovio::FilterState<25u, 4, 6, 1, 0> >; sensor_msgs::Imu_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const sensor_msgs::Imu_<std::allocator<void> > >]
+   void imuCallback(const sensor_msgs::Imu::ConstPtr& imu_msg){
+        ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:420:8: note:   candidate expects 1 argument, 3 provided
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:312:37: error: no matching function for call to ‘rovio::RovioNode<rovio::RovioFilter<rovio::FilterState<25u, 4, 6, 1, 0> > >::imgCallback0(cv::Mat&, double&)’
+   rovioNode.imgCallback0(filtered, t);
+                                     ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:312:37: note: candidate is:
+In file included from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:39:0:
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:457:8: note: void rovio::RovioNode<FILTER>::imgCallback0(const ImageConstPtr&) [with FILTER = rovio::RovioFilter<rovio::FilterState<25u, 4, 6, 1, 0> >; sensor_msgs::ImageConstPtr = boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >]
+   void imgCallback0(const sensor_msgs::ImageConstPtr & img){
+        ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:457:8: note:   candidate expects 1 argument, 2 provided
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:315:38: error: no matching function for call to ‘rovio::RovioNode<rovio::RovioFilter<rovio::FilterState<25u, 4, 6, 1, 0> > >::imgCallback1(cv::Mat&, double&)’
+    rovioNode.imgCallback1(filtered, t);
+                                      ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:315:38: note: candidate is:
+In file included from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:39:0:
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:467:8: note: void rovio::RovioNode<FILTER>::imgCallback1(const ImageConstPtr&) [with FILTER = rovio::RovioFilter<rovio::FilterState<25u, 4, 6, 1, 0> >; sensor_msgs::ImageConstPtr = boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >]
+   void imgCallback1(const sensor_msgs::ImageConstPtr & img) {
+        ^
+/home/lyw/catkin_rovio/src/rovio/include/rovio/RovioNode.hpp:467:8: note:   candidate expects 1 argument, 2 provided
+make[2]: *** [CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio_rosbag_loader.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,31 @@
+[  0%] [  0%] Built target geometry_msgs_generate_messages_lisp
+Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] [ 41%] Built target geometry_msgs_generate_messages_cpp
+Built target rovio
+[ 41%] [ 41%] Built target geometry_msgs_generate_messages_py
+Built target _rovio_generate_messages_check_deps_SrvResetToPose
+[ 41%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target rovio_rosbag_loader
+[ 50%] Built target feature_tracker_node
+[ 58%] Built target rovio_node
+[0m[ 66%] Built target rovio_generate_messages_lisp
+[ 83%] Built target rovio_generate_messages_py
+[ 91%] [100%] Built target rovio_generate_messages_cpp
+[32mBuilding CXX object CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o
+[0m[100%] Built target rovio_generate_messages
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp: In function ‘int main(int, char**)’:
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:264:38: error: cannot bind ‘std::ostream {aka std::basic_ostream<char>}’ lvalue to ‘std::basic_ostream<char>&&’
+       std::cout << cam_iterators.at(i) << std::endl;
+                                      ^
+In file included from /usr/include/c++/4.8/iostream:39:0,
+                 from /opt/ros/indigo/include/ros/time.h:54,
+                 from /opt/ros/indigo/include/rosbag/structures.h:41,
+                 from /opt/ros/indigo/include/rosbag/bag.h:44,
+                 from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:30:
+/usr/include/c++/4.8/ostream:602:5: error:   initializing argument 1 of ‘std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&) [with _CharT = char; _Traits = std::char_traits<char>; _Tp = __gnu_cxx::__normal_iterator<std::basic_string<char>*, std::vector<std::basic_string<char> > >]’
+     operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+     ^
+make[2]: *** [CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio_rosbag_loader.dir/all] Error 2
+make: *** [all] Error 2

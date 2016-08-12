@@ -1,0 +1,47 @@
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp: In function ‘int main(int, char**)’:
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:205:58: error: ‘numCameras’ was not declared in this scope
+   std::vector < std::vector < std::string >> image_names(numCameras);
+                                                          ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:268:7: error: ‘okvis’ has not been declared
+       okvis::Time t_imu = start;
+       ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:268:19: error: expected ‘;’ before ‘t_imu’
+       okvis::Time t_imu = start;
+                   ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:295:9: error: ‘t_imu’ was not declared in this scope
+         t_imu = std::stod(second + nanoseconds);
+         ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:295:27: error: ‘second’ was not declared in this scope
+         t_imu = std::stod(second + nanoseconds);
+                           ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:295:27: note: suggested alternative:
+In file included from /usr/include/boost/mpl/iter_fold_if.hpp:23:0,
+                 from /usr/include/boost/mpl/find_if.hpp:19,
+                 from /usr/include/boost/mpl/find.hpp:17,
+                 from /usr/include/boost/mpl/aux_/contains_impl.hpp:20,
+                 from /usr/include/boost/mpl/contains.hpp:20,
+                 from /usr/include/boost/math/policies/policy.hpp:10,
+                 from /usr/include/boost/math/policies/error_handling.hpp:19,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/indigo/include/ros/time.h:58,
+                 from /opt/ros/indigo/include/rosbag/structures.h:41,
+                 from /opt/ros/indigo/include/rosbag/bag.h:44,
+                 from /home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:30:
+/usr/include/boost/mpl/pair.hpp:53:8: note:   ‘boost::mpl::second’
+ struct second
+        ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:298:29: error: ‘okvis’ has not been declared
+         if (t_imu - start + okvis::Duration(1.0) > deltaT) {
+                             ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:298:52: error: ‘deltaT’ was not declared in this scope
+         if (t_imu - start + okvis::Duration(1.0) > deltaT) {
+                                                    ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:302:16: error: ‘t_imu’ was not declared in this scope
+       } while (t_imu <= t);
+                ^
+/home/lyw/catkin_rovio/src/rovio/src/rovio_rosbag_loader.cpp:305:23: error: ‘deltaT’ was not declared in this scope
+       if (t - start > deltaT) {
+                       ^
+make[2]: *** [CMakeFiles/rovio_rosbag_loader.dir/src/rovio_rosbag_loader.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rovio_rosbag_loader.dir/all] Error 2
+make: *** [all] Error 2

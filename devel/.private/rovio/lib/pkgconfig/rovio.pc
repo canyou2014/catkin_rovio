@@ -1,0 +1,8 @@
+prefix=/home/lyw/catkin_rovio/devel/.private/rovio
+
+Name: rovio
+Description: Description of rovio
+Version: 0.0.0
+Cflags: -I/home/lyw/catkin_rovio/devel/.private/rovio/include -I/home/lyw/catkin_rovio/src/rovio/include -I/home/lyw/catkin_rovio/src/rovio/lightweight_filtering/include -I/opt/ros/indigo/include -I/usr/include/eigen3 -I/usr/local/include/eigen3 -I/usr/include -I/usr/include/opencv
+Libs: -L/home/lyw/catkin_rovio/devel/.private/rovio/lib -lrovio
+Requires: lightweight_filtering kindr roscpp roslib cv_bridge message_runtime nav_msgs geometry_msgs sensor_msgs std_msgs tf rosbag yaml_cpp_catkin
